@@ -1,0 +1,130 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    transform-style: preserve-3d;
+
+    .box {
+        position: relative;
+        width: 250px;
+        height: 375px;
+        margin: 20px;
+        background: #ac00ff;
+        background: linear-gradient(63deg, #0000ff 0%, #c000ff 63%, #c000ff 100%);
+        border-radius: 40px;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: #dd00ffb1;
+            box-shadow: 0 0 30px -3px black;
+            overflow: unset;
+        }
+
+        &::before {
+            content: 'Leo';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 5em;
+            font-weight: 900;
+            color: #fff;
+            font-style: italic;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        &::after {
+            content: 'Shopping';
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #fff;
+            font-style: italic;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            opacity: 0.4;
+        }
+
+        .name {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            text-align: center;
+            transform-style: preserve-3d;
+            transform: translate3d(-50%, 0, 75px);
+            color: #fff;
+            width: 100%;
+            transition: 0.5s;
+            opacity: 0;
+            z-index: 10;
+        }
+
+        &:hover .name,
+        &:hover .name {
+            top: 40px;
+            opacity: 1;
+        }
+
+        .price {
+            opacity: 1;
+        }
+
+        &:hover .price {
+            opacity: 0;
+        }
+
+        .link {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform-style: preserve-3d;
+            transform: translate3d(-50%, 0, 75px);
+            color: #000000d4;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: 0.5s;
+            opacity: 0;
+            z-index: 10;
+            box-shadow: 0px -2px 8px 2px #fefcff85;
+            background-color: #ffffffc5;
+
+            &:hover {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+
+        &:hover .link {
+            bottom: 30px;
+            opacity: 1;
+        }
+
+        img {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            text-align: center;
+            transform-style: preserve-3d;
+            transform: translate3d(-50%, 0, 75px);
+            color: #fff;
+            width: 75%;
+            height: fit-content;
+            transition: 0.5s;
+        }
+
+        &:hover img {
+            transform: translate3d(-50%, 0, 150px);
+        }
+    }
+}
