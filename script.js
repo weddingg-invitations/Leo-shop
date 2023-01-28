@@ -28,9 +28,18 @@ const nav_items_cont_mob = document.querySelector('.nav-items-cont-mob')
 document.querySelector('.nav-items-cont-mob-close').addEventListener('click', () => {
     nav_items_cont_mob.style.cssText = 'opacity: 0.5; top: -80vh;'
 })
+// mobile panel serch animation
+document.querySelector('.search-mob').addEventListener('click', () => {
+    document.querySelector('.search-mob').style.width = '65%'
+    document.querySelector('.search-mob .inp').style.cssText = 'opacity: 1;'
+})
+
 document.querySelector('.nav-items-cont-mob-open').addEventListener('click', () => {
     nav_items_cont_mob.style.cssText = 'opacity: 1; top: 0;'
 })
+// scrill close
 window.addEventListener('scroll', () => {
     nav_items_cont_mob.style.cssText = 'opacity: 0.5; top: -80vh;'
+    document.querySelector('.search-mob').style.width = '30px'
+    document.querySelector('.search-mob .inp').style.cssText = 'opacity: 0;'
 })
