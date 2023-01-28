@@ -78,8 +78,25 @@ header .nav-right-corner .nav-right-corner-btn-open:hover {
 .header-nav .logo {
   position: relative;
   transition: transform 300ms;
-  min-height: 55px;
+  width: 65px;
+  min-height: 61px;
   cursor: pointer;
+}
+.header-nav .logo .text {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  margin-left: 29px;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  top: 3px;
+}
+.header-nav .logo .text span {
+  position: absolute;
+}
+.header-nav .logo .text span:nth-child(2) {
+  top: 16px;
 }
 .header-nav .logo:hover {
   transform: scale(1.2);
@@ -88,12 +105,15 @@ header .nav-right-corner .nav-right-corner-btn-open:hover {
 .header-nav .logo .beck2,
 .header-nav .logo .front {
   position: absolute;
-  width: 55px;
-  height: 55px;
+  width: 90%;
 }
 .header-nav .logo .beck {
-  -webkit-animation: rotate360 8s linear infinite;
-          animation: rotate360 8s linear infinite;
+  left: -13%;
+  top: -7%;
+  width: 115%;
+  height: 115%;
+  -webkit-animation: rotate360 10s linear infinite;
+          animation: rotate360 10s linear infinite;
 }
 @-webkit-keyframes rotate360 {
   0% {
@@ -112,12 +132,8 @@ header .nav-right-corner .nav-right-corner-btn-open:hover {
   }
 }
 .header-nav .logo .beck2 {
-  left: -5px;
-  top: -5px;
-  width: 65px;
-  height: 65px;
-  -webkit-animation: rotate3602 10s linear infinite;
-          animation: rotate3602 10s linear infinite;
+  -webkit-animation: rotate3602 15s linear infinite;
+          animation: rotate3602 15s linear infinite;
 }
 @-webkit-keyframes rotate3602 {
   0% {
@@ -175,6 +191,7 @@ header .nav-right-corner .nav-right-corner-btn-open:hover {
   padding: 0 10px 5px;
   background-color: #8b0af9;
   border-radius: 0 0 15px 15px;
+  z-index: -1;
 }
 .header-nav .search:hover .search-icon {
   transform: scale(1.2);
@@ -206,11 +223,12 @@ header .nav-right-corner .nav-right-corner-btn-open:hover {
   color: #fff;
   font-size: 16px;
   padding: 0;
+  padding-left: 8px;
 }
 .header-nav .search .custom-placeholder {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 18px;
   color: #fff;
   font-size: large;
 }
@@ -297,4 +315,33 @@ header .nav-right-corner .nav-right-corner-btn-open:hover {
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 725px) {
+  .container .box {
+    width: 180px;
+    height: 290px;
+    margin: 15px 10px;
+  }
+  .all-sections .all-sections-inner {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .header-nav .nav-items-cont {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header-nav .search {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-nav .search .inp {
+    width: 80%;
+  }
+  .header-nav .search {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */

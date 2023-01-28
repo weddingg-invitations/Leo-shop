@@ -38,7 +38,7 @@ header {
             }
 
             &:hover {
-                transform: translate(-2px ,-2px);
+                transform: translate(-2px, -2px);
             }
         }
 
@@ -85,8 +85,29 @@ header {
     .logo {
         position: relative;
         transition: transform 300ms;
-        min-height: 55px;
+        width: 65px;
+        min-height: 61px;
+        
         cursor: pointer;
+
+        .text {
+            position: relative;
+            color: white;
+            font-size: 25px;
+            margin-left: 29px;
+            display: flex;
+            flex-direction: column;
+            text-transform: capitalize;
+            top: 3px;
+
+            span {
+                position: absolute;
+            }
+
+            span:nth-child(2) {
+                top: 16px;
+            }
+        }
 
         &:hover {
             transform: scale(1.2);
@@ -96,12 +117,15 @@ header {
         .beck2,
         .front {
             position: absolute;
-            width: 55px;
-            height: 55px;
+            width: 90%;
         }
 
         .beck {
-            animation: rotate360 8s linear infinite;
+            left: -13%;
+            top: -7%;
+            width: 115%;
+            height: 115%;
+            animation: rotate360 10s linear infinite;
         }
 
         @keyframes rotate360 {
@@ -115,11 +139,7 @@ header {
         }
 
         .beck2 {
-            left: -5px;
-            top: -5px;
-            width: 65px;
-            height: 65px;
-            animation: rotate3602 10s linear infinite;
+            animation: rotate3602 15s linear infinite;
         }
 
         @keyframes rotate3602 {
@@ -178,6 +198,7 @@ header {
         padding: 0 10px 5px;
         background-color: #8b0af9;
         border-radius: 0 0 15px 15px;
+        z-index: -1;
 
         &:hover .search-icon {
             transform: scale(1.2);
@@ -213,12 +234,13 @@ header {
             color: #fff;
             font-size: 16px;
             padding: 0;
+            padding-left: 8px;
         }
 
         .custom-placeholder {
             position: absolute;
             top: 0;
-            left: 10px;
+            left: 18px;
             color: #fff;
             font-size: large;
         }
@@ -241,7 +263,7 @@ header {
     margin-top: -1px;
     padding-bottom: 100px;
 
-    .all-sections-inner{
+    .all-sections-inner {
         width: 80%;
         margin: 0 auto;
     }
@@ -273,7 +295,8 @@ header {
 }
 
 .sect-sale {
-    background: linear-gradient(7deg,#091972  20%, #7700ff 45%, #002cff 100%);
+    background: linear-gradient(7deg, #091972 20%, #7700ff 45%, #002cff 100%);
+
     .price {
         background-color: #ff0000;
     }
@@ -281,9 +304,11 @@ header {
 
 .sect-men {
     background: linear-gradient(0deg, #ffb5e3 0%, #091972 45%, #091972 100%);
+
     .box {
         background: linear-gradient(63deg, #0000ff 0%, #00deff 63%, #2196f3 100%);
     }
+
     .price {
         background-color: #000;
     }
@@ -291,9 +316,11 @@ header {
 
 .sect-women {
     background: linear-gradient(180deg, #ffb5e3 20%, #ffb5e3 90%, #05afd0 100%);
+
     .box {
         background: linear-gradient(63deg, #ffffff 0%, #ff00dd 63%, #ffffff 100%);
     }
+
     .price {
         background-color: #ff00ff;
     }
@@ -301,9 +328,11 @@ header {
 
 .sect-kids {
     background: linear-gradient(0deg, #05afd0 20%, #05afd0 45%, #05afd0 100%);
-    .box{
+
+    .box {
         background: linear-gradient(63deg, #ffffff 0%, #05afd0 63%, #ffffff 100%);
     }
+
     .price {
         background-color: #000000;
     }
@@ -313,3 +342,34 @@ header {
 .hide {
     display: none;
 }
+
+@media screen and (max-width: 725px) {
+    .container .box{
+        width: 180px;
+        height: 290px;
+        margin: 15px 10px;
+    }
+    .all-sections .all-sections-inner{
+        width: 98%;
+    }
+ }
+
+@media screen and (max-width: 670px) {
+   .header-nav .nav-items-cont{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header-nav .search{
+        right: 30px;
+    }
+ }
+ @media screen and (max-width: 375px) {
+    .header-nav .search .inp{
+        width: 80%;
+    }
+    .header-nav .search{
+        width: 70%;
+    }
+ }
