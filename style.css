@@ -366,7 +366,7 @@ header {
 
 .search-mob {
   position: relative;
-  display: flex;
+  display: none;
   padding: 5px 5px;
   background-color: #8b0af9;
   border-radius: 15px;
@@ -520,6 +520,9 @@ header {
 @media screen and (max-width: 440px) {
   .header-nav .search {
     display: none;
+  }
+  .search-mob {
+    display: flex;
   }
 }
 @media screen and (max-width: 400px) {
