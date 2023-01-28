@@ -91,7 +91,7 @@
             transform-style: preserve-3d;
             transform: translate3d(-50%, 0, 75px);
             color: #000000d4;
-            padding: 10px 25px;
+            padding: 6px 11px;
             border-radius: 30px;
             transition: 0.5s;
             opacity: 0;
@@ -110,6 +110,10 @@
             opacity: 1;
         }
 
+        @media screen and(max-width:400px) {
+            bottom: 45px;
+        }
+
         img {
             position: absolute;
             top: 25%;
@@ -125,6 +129,16 @@
 
         &:hover img {
             transform: translate3d(-50%, 0, 150px);
+        }
+
+        @media screen and (max-width:400px) {
+            .name {
+                font-size: 18px;
+            }
+
+            img {
+                top: 35%;
+            }
         }
     }
 }

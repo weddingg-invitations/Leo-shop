@@ -1,9 +1,5 @@
 html {
     scroll-behavior: smooth;
-}
-
-.parent {
-    max-width: 1920px;
     font-family: "Mirza", cursive, sans-serif;
 }
 
@@ -546,7 +542,18 @@ header {
         width: 80%;
     }
 
-    .header-nav .search {
-        width: 70%;
+    .header-nav {
+        .search {
+            width: 70%;
+        }
+    }
+
+    .container {
+        .box {
+            width: 136px;
+            .link{
+                padding: 2px 8px;
+            }
+        }
     }
 }

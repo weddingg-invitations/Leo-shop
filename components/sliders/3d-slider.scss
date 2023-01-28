@@ -29,6 +29,7 @@
         box-shadow: 0 0 0 0 #ffffff99;
     }
 }
+
 .carousel__prev {
     transform: rotate(180deg);
     left: 40%;
@@ -42,10 +43,10 @@
     .carousel__prev {
         left: 20%;
     }
-    
+
     .carousel__next {
         right: 20%;
-    }    
+    }
 }
 
 .carousel__body {
@@ -64,6 +65,8 @@
         display: block;
         float: left;
         box-sizing: border-box;
+        max-width: 400px;
+        max-height: 500px;
         margin-left: 20px;
         margin-right: 20px;
 

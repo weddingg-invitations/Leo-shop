@@ -22,7 +22,7 @@
     }
 
     function resize() {
-        width = Math.max(window.innerWidth * 0.25, 275),
+        width = Math.max(window.innerWidth * 0.25, 200),
             height = window.innerHeight * 0.5,
             totalWidth = width * items.length;
 
