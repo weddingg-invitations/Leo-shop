@@ -494,7 +494,8 @@ header {
     width: 70%;
   }
   .container .box {
-    width: 136px;
+    margin: 20px;
+    width: 134px;
   }
   .container .box .link {
     padding: 2px 8px;
