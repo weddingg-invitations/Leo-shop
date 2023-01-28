@@ -29,7 +29,6 @@
         box-shadow: 0 0 0 0 #ffffff99;
     }
 }
-
 .carousel__prev {
     transform: rotate(180deg);
     left: 40%;
@@ -37,6 +36,16 @@
 
 .carousel__next {
     right: 40%;
+}
+
+@media screen and (max-width:670px) {
+    .carousel__prev {
+        left: 20%;
+    }
+    
+    .carousel__next {
+        right: 20%;
+    }    
 }
 
 .carousel__body {
@@ -127,11 +136,12 @@
                     transition: 250ms;
                 }
             }
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
             }
 
-            &:hover button{
+            &:hover button {
                 box-shadow: 0px 0px 7px -5px #000000a1;
                 background-color: #9c00ff69;
                 transform: translate(0px, 0px);
