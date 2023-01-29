@@ -31,12 +31,19 @@
                 height: 35px;
 
                 .text {
-                    font-size: 15px;
+                    position: relative;
+                    font-size: 18px;
                     margin-left: 15px;
-                    top: 7px;
 
-                    span:nth-child(1) {
-                        top: 6px;
+                    p {
+                        position: absolute;
+                        left: 4%;
+                        top: 11px;
+                        color: white;
+                    }
+
+                    p:nth-child(2) {
+                        top: 20px;
                     }
                 }
             }
@@ -70,32 +77,10 @@
             left: 5px;
         }
     }
-}
 
-@media screen and (max-width: 670px) {
     .box {
         width: 170px;
         height: 325px;
-    }
-
-    .header-nav {
-        .logo {
-            .text {
-                position: relative;
-                font-size: 27px;
-
-                p {
-                    position: absolute;
-                    left: 4%;
-                    top: 6px;
-                    color: white;
-                }
-
-                p:nth-child(2) {
-                    top: 15px;
-                }
-            }
-        }
     }
 }
 
