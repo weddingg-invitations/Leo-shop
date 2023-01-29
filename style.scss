@@ -89,19 +89,16 @@ header {
 
         .text {
             position: relative;
-            color: white;
-            font-size: 25px;
-            margin-left: 29px;
-            display: flex;
-            flex-direction: column;
-            text-transform: capitalize;
-            top: 3px;
+            font-size: 27px;
 
-            span {
+            p {
                 position: absolute;
+                left: 45%;
+                top: 2px;
+                color: white;
             }
 
-            span:nth-child(2) {
+            p:nth-child(2) {
                 top: 16px;
             }
         }
@@ -202,16 +199,6 @@ header {
             left: 20px;
             width: 35px;
             height: 35px;
-
-            .text {
-                font-size: 15px;
-                margin-left: 15px;
-                top: 7px;
-
-                span:nth-child(1) {
-                    top: 6px;
-                }
-            }
         }
 
         .nav-lists {
