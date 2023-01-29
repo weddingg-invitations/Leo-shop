@@ -7,7 +7,8 @@
   width: 100%;
   transform-style: preserve-3d;
 }
-.container .box {
+
+.box {
   position: relative;
   width: 250px;
   height: 375px;
@@ -19,12 +20,12 @@
   overflow: hidden;
   text-transform: capitalize;
 }
-.container .box:hover {
+.box:hover {
   background-color: rgba(221, 0, 255, 0.6941176471);
   box-shadow: 0 0 30px -3px black;
   overflow: unset;
 }
-.container .box::before {
+.box::before {
   content: "Leo";
   position: absolute;
   bottom: 40px;
@@ -36,7 +37,7 @@
   opacity: 0;
   transition: 0.5s;
 }
-.container .box::after {
+.box::after {
   content: "Shopping";
   position: absolute;
   bottom: 20px;
@@ -48,10 +49,10 @@
   opacity: 0;
   transition: 0.5s;
 }
-.container .box:hover::before, .container .box:hover::after {
+.box:hover::before, .box:hover::after {
   opacity: 0.4;
 }
-.container .box .name {
+.box .name {
   position: absolute;
   top: 0;
   left: 50%;
@@ -64,17 +65,17 @@
   opacity: 0;
   z-index: 10;
 }
-.container .box:hover .name, .container .box:hover .name {
+.box:hover .name, .box:hover .name {
   top: 40px;
   opacity: 1;
 }
-.container .box .price {
+.box .price {
   opacity: 1;
 }
-.container .box:hover .price {
+.box:hover .price {
   opacity: 0;
 }
-.container .box .link {
+.box .link {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -89,20 +90,15 @@
   box-shadow: 0px -2px 8px 2px rgba(254, 252, 255, 0.5215686275);
   background-color: rgba(255, 255, 255, 0.7725490196);
 }
-.container .box .link:hover {
+.box .link:hover {
   background-color: #ffffff;
   color: #000000;
 }
-.container .box:hover .link {
+.box:hover .link {
   bottom: 30px;
   opacity: 1;
 }
-@media screen and (max-width: 400px) {
-  .container .box {
-    bottom: 45px;
-  }
-}
-.container .box img {
+.box img {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -116,14 +112,6 @@
   height: fit-content;
   transition: 0.5s;
 }
-.container .box:hover img {
+.box:hover img {
   transform: translate3d(-50%, 0, 150px);
-}
-@media screen and (max-width: 400px) {
-  .container .box .name {
-    font-size: 18px;
-  }
-  .container .box img {
-    top: 35%;
-  }
 }/*# sourceMappingURL=card-ui-hover.css.map */

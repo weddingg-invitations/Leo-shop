@@ -39,14 +39,6 @@
   right: 40%;
 }
 
-@media screen and (max-width: 670px) {
-  .carousel__prev {
-    left: 20%;
-  }
-  .carousel__next {
-    right: 20%;
-  }
-}
 .carousel__body {
   width: 100%;
   padding: 200px 0 70px 0;
