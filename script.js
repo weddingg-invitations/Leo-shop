@@ -5,7 +5,7 @@ VanillaTilt.init(document.querySelectorAll(".vanilla-tilt-3D"), {
     scale: 1.1
 });
 // serch placeholder from all brousers
-document.querySelector('.inp').addEventListener('input', (e) => {
+document.querySelector('.inp-custom-placeholder').addEventListener('input', (e) => {
     if (e.target.value) {
         document.querySelector('.custom-placeholder').classList.add('hide')
     } else {
@@ -29,17 +29,17 @@ document.querySelector('.nav-items-cont-mob-close').addEventListener('click', ()
     nav_items_cont_mob.style.cssText = 'opacity: 0.5; top: -80vh;'
 })
 // mobile panel serch animation
-document.querySelector('.search-mob').addEventListener('click', () => {
-    document.querySelector('.search-mob').style.width = '65%'
-    document.querySelector('.search-mob .inp').style.cssText = 'opacity: 1;'
+const search_mob = document.querySelector('.search-mob')
+search_mob.addEventListener('click', () => {
+    search_mob.style.width = '160px'
 })
-
+document.querySelector('.carousel').addEventListener('click',()=>{search_mob.style.width = '30px'})
 document.querySelector('.nav-items-cont-mob-open').addEventListener('click', () => {
     nav_items_cont_mob.style.cssText = 'opacity: 1; top: 0;'
 })
 // scrill close
 window.addEventListener('scroll', () => {
     nav_items_cont_mob.style.cssText = 'opacity: 0.5; top: -80vh;'
-    document.querySelector('.search-mob').style.width = '30px'
-    document.querySelector('.search-mob .inp').style.cssText = 'opacity: 0;'
+    search_mob.style.width = '30px'
+    search_mob.querySelector('.inp').style.cssText = 'opacity: 0;'
 })

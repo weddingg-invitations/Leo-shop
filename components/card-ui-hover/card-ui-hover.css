@@ -107,7 +107,6 @@
   transform: translate3d(-50%, 0, 75px);
   color: #fff;
   width: 75%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   transition: 0.5s;

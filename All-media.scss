@@ -5,9 +5,10 @@
 }
 
 @media screen and (max-width: 670px) {
-    .carousel__body{
+    .carousel__body {
         padding: 100px 0 70px 0;
     }
+
     .carousel__prev {
         left: 20%;
     }
@@ -30,25 +31,7 @@
             }
 
             .logo {
-                width: 35px;
-                height: 35px;
-
-                .text {
-                    position: relative;
-                    font-size: 18px;
-                    margin-left: 15px;
-
-                    p {
-                        position: absolute;
-                        left: 4%;
-                        top: 11px;
-                        color: white;
-                    }
-
-                    p:nth-child(2) {
-                        top: 20px;
-                    }
-                }
+                width: 30px;
             }
 
             .nav-items-cont-mob {

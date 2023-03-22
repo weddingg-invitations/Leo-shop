@@ -26,22 +26,7 @@
     justify-content: flex-end;
   }
   header .header-nav .logo {
-    width: 35px;
-    height: 35px;
-  }
-  header .header-nav .logo .text {
-    position: relative;
-    font-size: 18px;
-    margin-left: 15px;
-  }
-  header .header-nav .logo .text p {
-    position: absolute;
-    left: 4%;
-    top: 11px;
-    color: white;
-  }
-  header .header-nav .logo .text p:nth-child(2) {
-    top: 20px;
+    width: 30px;
   }
   header .header-nav .nav-items-cont-mob {
     display: flex;
