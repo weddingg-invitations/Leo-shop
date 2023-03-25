@@ -161,6 +161,11 @@ header {
   padding: 20px 0;
   transition: 350ms;
 }
+.header-nav .nav-items-cont-mob .logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
 .header-nav .nav-items-cont-mob .nav-lists {
   display: flex;
   font-family: "Mirza", cursive, sans-serif;

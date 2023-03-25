@@ -1,6 +1,6 @@
 // card-ui-hover/vanilla-tilt - setings
 VanillaTilt.init(document.querySelectorAll(".vanilla-tilt-3D"), {
-    max: 15,
+    max: 5,
     speed: 400,
     scale: 1.1
 });
@@ -33,7 +33,7 @@ const search_mob = document.querySelector('.search-mob')
 search_mob.addEventListener('click', () => {
     search_mob.style.width = '160px'
 })
-document.querySelector('.carousel').addEventListener('click',()=>{search_mob.style.width = '30px'})
+document.querySelector('.carousel').addEventListener('click', () => { search_mob.style.width = '30px' })
 document.querySelector('.nav-items-cont-mob-open').addEventListener('click', () => {
     nav_items_cont_mob.style.cssText = 'opacity: 1; top: 0;'
 })

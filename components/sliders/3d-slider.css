@@ -18,23 +18,54 @@
   transition: transform 0.25s ease;
   padding: 5px;
   border-radius: 5px;
-  background-color: #8100ff;
-  width: 35px;
-  height: 35px;
-  transition: 350ms;
+  box-shadow: 0 0 10px 0 #fe5bff;
+  border-radius: 100%;
+  padding: 8px;
+  transition: 250ms;
   cursor: pointer;
 }
-.carousel__prev:hover,
-.carousel__next:hover {
+.carousel__prev div,
+.carousel__next div {
+  width: 35px;
+  height: 35px;
+  background-color: #a142ff;
+  transition: 250ms;
+  -webkit-clip-path: polygon(60% 36%, 60% 36%, 60% 10%, 100% 50%, 60% 90%, 60% 62%, 60% 62%);
+          clip-path: polygon(60% 36%, 60% 36%, 60% 10%, 100% 50%, 60% 90%, 60% 62%, 60% 62%);
+  transform: translate(-8px, 0);
+}
+.carousel__prev:hover div,
+.carousel__next:hover div {
+  background-color: #d755ff;
   transform: scale(1.1);
+  -webkit-clip-path: polygon(0 30%, 60% 36%, 50% 7%, 100% 50%, 49% 93%, 60% 62%, 0 70%);
+          clip-path: polygon(0 30%, 60% 36%, 50% 7%, 100% 50%, 49% 93%, 60% 62%, 0 70%);
+}
+.carousel__prev:active,
+.carousel__next:active {
+  box-shadow: 0 0 15px 1px #ffffff;
+}
+.carousel__prev:active div,
+.carousel__next:active div {
+  transform: translate(4px, 0) scale(1.1);
+  background-color: #ffffff;
 }
 
 .carousel__prev {
-  transform: rotate(180deg);
   left: 40%;
 }
-.carousel__prev:hover {
+.carousel__prev div {
+  transform: rotate(180deg) translate(-8px, 0);
+}
+.carousel__prev:hover div {
   transform: rotate(180deg) scale(1.1);
+}
+.carousel__prev:active {
+  box-shadow: 0 0 15px 1px #ffffff;
+}
+.carousel__prev:active div {
+  transform: rotate(180deg) translate(4px, 0) scale(1.1);
+  background-color: #ffffff;
 }
 
 .carousel__next {

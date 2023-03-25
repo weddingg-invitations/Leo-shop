@@ -182,6 +182,12 @@ header {
         padding: 20px 0;
         transition: 350ms;
 
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
         .nav-lists {
             display: flex;
             font-family: "Mirza", cursive, sans-serif;
