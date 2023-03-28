@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     width: 100%;
     transform-style: preserve-3d;
+    z-index: 1;
 }
 
 .box {
@@ -13,8 +14,6 @@
     width: 250px;
     height: 375px;
     margin: 20px;
-    background: #ac00ff;
-    background: linear-gradient(63deg, #0000ff 0%, #c000ff 63%, #c000ff 100%);
     border-radius: 40px;
     transform-style: preserve-3d;
     overflow: hidden;

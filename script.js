@@ -43,3 +43,4 @@ window.addEventListener('scroll', () => {
     search_mob.style.width = '30px'
     search_mob.querySelector('.inp').style.cssText = 'opacity: 0;'
 })
+// random blobs animaation

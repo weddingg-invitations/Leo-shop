@@ -3,6 +3,11 @@ html {
     font-family: "Mirza", cursive, sans-serif;
 }
 
+.parent {
+    overflow: hidden;
+    position: relative;
+}
+
 header {
     width: 100%;
     min-height: 100vh;
@@ -369,6 +374,7 @@ header {
     background-repeat: no-repeat;
     margin-top: -1px;
     padding-bottom: 100px;
+    z-index: 5;
 
     .all-sections-inner {
         width: 80%;
@@ -413,7 +419,9 @@ header {
     background: linear-gradient(0deg, #ffb5e3 0%, #091972 45%, #091972 100%);
 
     .box {
+        position: relative;
         background: linear-gradient(63deg, #0000ff 0%, #00deff 63%, #2196f3 100%);
+        z-index: 5;
     }
 
     .price {
@@ -448,4 +456,73 @@ header {
 // js class add
 .hide {
     display: none;
+}
+
+.blobs {
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+
+    &::before {
+        position: absolute;
+        content: '';
+        // box-shadow: 0 0 75px 33px #ff0057;
+        left: 50%;
+        top: 50%;
+        z-index: 0;
+    }
+
+    svg {
+        position: relative;
+        max-width: 200%;
+        max-height: 200%;
+        z-index: 1;
+    }
+}
+
+.blob_1 {
+    width: 50%;
+    left: 0;
+}
+
+.blob_2 {
+    width: 60%;
+    right: 0;
+    top: 4%;
+}
+
+.blob_3 {
+    width: 20%;
+    left: 2%;
+    top: 10%;
+}
+
+.blob_4 {
+    width: 70%;
+    right: 2%;
+    top: 10.5%;
+}
+
+.blob_5 {
+    width: 50%;
+    left: 0;
+    top: 22%;
+}
+
+.blob_6 {
+    width: 30%;
+    right: 5%;
+    top: 30%;
+}
+
+.blob_7 {
+    width: 20%;
+    left: 5%;
+    top: 35%;
+}
+
+.blob_8 {
+    width: 100%;
+    right: 5%;
+    top: 40%;
 }
