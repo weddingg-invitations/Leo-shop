@@ -377,6 +377,8 @@ header {
     z-index: 5;
 
     .all-sections-inner {
+        position: relative;
+        z-index: 1;
         width: 80%;
         margin: 0 auto;
     }
